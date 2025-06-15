@@ -1,0 +1,77 @@
+.go-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center; /* 가로 중앙 */
+  align-items: center;     /* 세로 중앙 */
+
+}
+
+.title{
+    width: 580px;
+    height: 390px;
+}
+.go-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;     /* 자식 요소 가로 중앙 */
+  justify-content: center;  
+  border-radius: 20px;
+  padding: 40px 32px;
+}
+
+.go-envelope {
+  width: 80px;
+  margin-bottom: 16px;
+}
+
+.go-btn {
+ display: flex;
+width: 511px;
+height: 65px;
+padding: 20px 217px;
+align-items: flex-start;
+gap: 10px;
+flex-shrink: 0;
+}
+
+.go-btn.start {
+border-radius: 30px;
+margin-top: 78px;
+background: #FFDEE2;
+box-shadow: 1px 1.5px 5px 0px rgba(0, 0, 0, 0.15);
+color: #6C5B5E;
+font-family: NanumMyeongjo;
+font-size: 18px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+}
+.go-btn.cancel {
+    margin-top: 32px;
+  border-radius: 30px;
+background: #FEF7CD;
+box-shadow: 1px 1.5px 5px 0px rgba(0, 0, 0, 0.15);
+color: #6C5B5E;
+font-family: NanumMyeongjo;
+font-size: 18px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+}
+.go-btn.start:active {
+  background: #ffc7d1;
+}
+
+.go-btn.cancel:active {
+  background: #f7eeb0;
+}
+
+.go-btn.start:hover {
+  background: #ffd1db;
+  cursor: pointer;
+}
+
+.go-btn.cancel:hover {
+  background: #fff3a6;
+  cursor: pointer;
+}

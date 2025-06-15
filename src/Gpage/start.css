@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Song+Myung&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Song+Myung&display=swap');
+body {
+  margin: 0;
+  height: 100%;
+  padding: 0;
+  font-family: 'Noto Sans KR', sans-serif;  
+  background-color: #ffeef3;  
+}
+
+.start-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  background: #ffeef3;
+  overflow: hidden; /* 스크롤 방지 */
+}
+
+.progress-bar {
+  position: absolute; /* 절대 위치 설정 */
+  top: 65px; /* y 좌표 */
+  left: 130px; /* x 좌표 */
+  width: 1296px;
+  height: 20px;
+  background: #fffbfb;
+  border-radius: 30px;
+  flex-shrink: 0;
+  margin-bottom: 20px;
+  /* overflow: hidden; */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.progress {
+  height: 100%;
+  background: #ff85a8;
+  border-radius: 30px;
+  width: 0; /* 초기 너비는 0 */
+}
+
+.progress-heart-wrapper {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+ 
+}
+
+.progress-heart {
+  position: absolute;
+  top: -15px; /* 진행 바 위에 배치 */
+  right: -10px; /* 진행 바 끝에 고정 */
+  width: 50px;
+  height: 50px;
+  /* transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; 하트 변화 애니메이션 */
+  transition: opacity 1s;
+  pointer-events: none;
+}
+
+.progress-heart-empty{
+  position: absolute;
+  top: -5px; /* 진행 바 위에 배치 */
+  right: 0px; /* 진행 바 끝에 고정 */
+  width: 45px;
+  height: 45px;
+  opacity: 1;
+  transition: opacity 1s;
+  pointer-events: none;
+}
+.progress-heart.full {
+  position: absolute;
+  top: -5px; /* 진행 바 위에 배치 */
+  right: 0px; /* 진행 바 끝에 고정 */
+  width: 50px;
+  height: 50px;
+  z-index: 2;
+  transition: opacity 1s;
+  opacity: 1;
+}
+
+
+.progress-text {
+  position: absolute;
+  top: -25px;
+  left: 0;
+  font-size: 14px;
+  color: #ff6b83;
+}
+
+.middle-image {
+  position: absolute; /* 절대 위치 설정 */
+  top: 50%; /* 세로 중앙 */
+  left: 50%; /* 가로 중앙 */
+  transform: translate(-50%, -50%); /* 중앙 정렬 */
+  width: 100%;
+  height: 982px;
+  /* z-index:-1 ; 다른 요소 위에 표시 */
+}
+
+.form-box {
+  position: relative; /* 중간 이미지를 배치하기 위한 기준 */
+  background: #FFFDFD;;
+  border-radius: 23px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 410px;
+  text-align: center;
+  z-index: 1;
+  margin-top: 50px; /* 상단 여백 추가 */
+}
+.form-box1{
+   position: relative; /* 중간 이미지를 배치하기 위한 기준 */
+  background: #FFFDFD;;
+  border-radius: 23px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 410px;
+  text-align: center;
+  z-index: 1;
+  margin-top: 100px; /* 상단 여백 추가 */
+}
+
+
+.form-title {
+  font-size: 24px;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(90deg, #FF6B83 0%, #FF6BDC 100%);
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 68px;
+  font-family: "Song Myung";
+
+}
+
+.form-group {
+  margin-bottom: 63px;
+  text-align: left;
+}
+
+label {
+color: #6C5B5E;
+font-family: "Nanum Myeongjo", serif;
+font-weight: 400;
+font-size: 19.473px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;  
+position: relative;
+top: -10px;
+}
+
+input,
+select {
+  width: 95%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  font-size: 14px;
+  margin-right: 30px;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #ff6b83;
+}
+/* .like-input{
+  resize : none;
+} */
+.submit-btn {
+  width: 400.852px;
+  height: 50.452px;
+  background: #ffdee2;
+  color: #6c5b5e;
+  border: none;
+  border-radius: 23px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;;
+  transition: background 0.3s;
+}
+
+.submit-btn1 {
+  width: 400.852px;
+  height: 50.452px;
+  background: #ffdee2;
+  color: #6c5b5e;
+  border: none;
+  border-radius: 23px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;;
+  transition: background 0.3s;
+  margin-top: 0px; /* 상단 여백 추가 */
+}
+
+
+.submit-btn:hover {
+  background: #ffc0dd;
+}
+
+.form-footer {
+  font-size: 15px;
+  color: #6c5b5e;
+  margin-top: 10px;
+}
+.age-input {
+  width: 95%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  font-size: 14px;
+  resize: vertical;
+  /* text-align: center; */
+}
+
+.age-input:focus {
+  outline: none;
+  border-color: #ff6b83;
+}
+.love-img{
+    position: relative;
+    top: 6px; 
+}
+
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  margin-top: 24px;
+  margin-bottom: 0;
+
+}
+.radio-group label {
+  display: flex;
+  align-items: center;
+  font-family: 'Nanum Myeongjo', 'Song Myung', serif;
+  font-size: 14px;
+  /* color: #6C5B5E; */
+  cursor: pointer;
+  gap: 10px;
+}
+.radio-group input[type="radio"] {
+  accent-color: #ffb6c1; /* 핑크색 */
+  width: 22px;
+  height: 22px;
+  margin-right: 8px;
+  cursor: pointer;
+}
